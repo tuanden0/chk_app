@@ -43,19 +43,19 @@ func createCSVData(data [][]string) (out []*Rows, err error) {
 				return nil, errCSVWrongDataType
 			}
 
-			high, err := strconv.ParseFloat(fields[2], 64)
+			high, err := strconv.ParseFloat(fields[3], 64)
 			if err != nil {
 				log.Println(err)
 				return nil, errCSVWrongDataType
 			}
 
-			low, err := strconv.ParseFloat(fields[2], 64)
+			low, err := strconv.ParseFloat(fields[4], 64)
 			if err != nil {
 				log.Println(err)
 				return nil, errCSVWrongDataType
 			}
 
-			close, err := strconv.ParseFloat(fields[2], 64)
+			close, err := strconv.ParseFloat(fields[5], 64)
 			if err != nil {
 				log.Println(err)
 				return nil, errCSVWrongDataType
